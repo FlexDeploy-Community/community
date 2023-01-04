@@ -6,12 +6,12 @@ To contribute content, please fork the respository under your GitHub account and
 
 ## Repository folder structure
 
-**workflows** – xml export of FlexDeploy workflows
-***plugins*** – development artifacts for custom plugins
-***scripts*** – sample groovy scripts for wokflows, pipelines, or other configuration
-***integrations*** – integration solutions for various toolchain categories (e.g. secrets management, change management, issue tracking)
-***solutions*** – end to end solution documentation and supporting development/configuration artifacts (workflows, plugins, scripts, etc)
-***articles*** – knowledge sharing articles via common formats (e.g. html, Word, PDF, Power Point, etc.)
+***workflows*** – xml export of FlexDeploy workflows<br>
+***plugins*** – development artifacts for custom plugins<br>
+***scripts*** – sample groovy scripts for wokflows, pipelines, or other configuration<br>
+***integrations*** – integration solutions for various toolchain categories (e.g. secrets management, change management, issue tracking)<br>
+***solutions*** – end to end solution documentation and supporting development/configuration artifacts (workflows, plugins, scripts, etc)<br>
+***articles*** – knowledge sharing articles via common formats (e.g. html, Word, PDF, Power Point, etc.)<br>
 
 When contributing content, please create subfolders under the appropriate parent folder releated the content type.  For example, if contributing the source code for a Tableau plugin, create under plugins/Tableau.
 
