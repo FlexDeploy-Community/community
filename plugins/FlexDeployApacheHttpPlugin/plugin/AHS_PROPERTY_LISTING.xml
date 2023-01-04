@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList xmlns="http://flexagon.com/deploy/propertylist">
+  <Name>FDAH_PLUGIN</Name>
+  <Property>
+    <Name>FDAH_PATH_TO_DOCUMENT_ROOT</Name>
+    <Description>Path to the document root of the server, such as htdocs.</Description>
+    <Scope>ENVINST</Scope>
+    <DataType>String</DataType>
+	<SubDataType>DIRECTORY</SubDataType>
+    <IsEncrypted>false</IsEncrypted>
+    <IsRequired>true</IsRequired>
+    <Validators/>
+  </Property>
+    <Property>
+    <Name>FDAH_START_TIMEOUT</Name>
+    <Description>How many milliseconds to wait for the server to start before failing the workflow step. Defaults to 300000 (5 minutes)</Description>
+    <Scope>ENVINST</Scope>
+    <DataType>Integer</DataType>
+    <IsEncrypted>false</IsEncrypted>
+    <IsRequired>true</IsRequired>
+    <Validators/>
+  </Property>
+  
+</PropertyList>
