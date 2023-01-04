@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PluginDefinition xmlns="http://flexagon.com/deploy/plugin">
+  <Name>FlexagonApacheHttpPlugin</Name>
+  <PluginDisplayName>Apache HTTP</PluginDisplayName>
+  <Description>A plugin to manage Apache Http Servers and deployment.</Description>
+  <TechnologyGroup>Web Servers</TechnologyGroup>
+  <SubTechnologyGroup>Apache Http Server</SubTechnologyGroup>
+  <Vendor>Flexagon</Vendor>
+  <MaxConcurrentThreads>-1</MaxConcurrentThreads>
+  <Version>0.7</Version>
+  <Operations>
+    <Operation>
+      <Name>build</Name>
+      <Description>Build an artifact to deploy to an Apache Http Server</Description>
+      <Target>flexagon.fd.plugin.apache.http.operations.Build</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDAH_PATH_TO_FILES</Name>
+          <DataType>String</DataType>
+          <Description>Relative path to files inside the FD_TEMP_DIR to collect into a build artifact</Description>
+          <DisplayName>Path to Files</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>false</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>false</ConsumesArtifacts>
+      <ProducesArtifacts>true</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>deploy</Name>
+      <Description>Deploy to Apache Http Server artifact</Description>
+      <Target>flexagon.fd.plugin.apache.http.operations.Deploy</Target>
+      <PropertyKeys>
+        <PropertyKey>FDAH_PATH_TO_DOCUMENT_ROOT</PropertyKey>
+      </PropertyKeys>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>stopServer</Name>
+      <Description>Stop an Apache Http Server</Description>
+      <Target>flexagon.fd.plugin.apache.http.operations.Stop</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>false</ConsumesArtifacts>
+      <ProducesArtifacts>true</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>startServer</Name>
+      <Description>Start an Apache Http Server</Description>
+      <Target>flexagon.fd.plugin.apache.http.operations.Start</Target>
+      <PropertyKeys>
+        <PropertyKey>FDAH_START_TIMEOUT</PropertyKey>
+      </PropertyKeys>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>false</ConsumesArtifacts>
+      <ProducesArtifacts>true</ProducesArtifacts>
+    </Operation>
+  </Operations>
+</PluginDefinition>
