@@ -6,7 +6,7 @@ To contribute content, please fork the respository under your GitHub account and
 
 ## Repository folder structure
 
-***workflows*** – xml export of FlexDeploy workflows
+**workflows** – xml export of FlexDeploy workflows
 ***plugins*** – development artifacts for custom plugins
 ***scripts*** – sample groovy scripts for wokflows, pipelines, or other configuration
 ***integrations*** – integration solutions for various toolchain categories (e.g. secrets management, change management, issue tracking)
