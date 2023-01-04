@@ -14,3 +14,4 @@ To contribute content, please fork the respository under your GitHub account and
 ***articles*** – knowledge sharing articles via common formats (e.g. html, Word, PDF, Power Point, etc.)
 
 When contributing content, please create subfolders under the appropriate parent folder releated the content type.  For example, if contributing the source code for a Tableau plugin, create under plugins/Tableau.
+
